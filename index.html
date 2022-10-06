@@ -53,9 +53,19 @@
                     Ефективні рішення для<br />
                     вашого бізнесу
                 </h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-close" data-modal-close>
+                    <svg class="icon-close" width="30" height="30">
+                        <use href="./images/button-close.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
 
         <section class="benefits">
             <div class="container">
@@ -397,6 +407,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
